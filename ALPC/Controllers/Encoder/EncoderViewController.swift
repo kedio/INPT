@@ -1,24 +1,24 @@
 //
-//  DecoderViewController.swift
+//  EncoderViewController.swift
 //  ALPC
 //
-//  Created by Kevin Dion on 2018-01-16.
+//  Created by Kevin Dion on 2018-01-17.
 //  Copyright © 2018 None. All rights reserved.
 //
 
 import UIKit
 
-class DecoderViewController: UIViewController {
+class EncoderViewController: UIViewController {
     // MARK: Properties
 
-    private let _inputView: DecoderInputView
-    private let _viewModel: DecoderViewModel
+    private let _inputView: EncoderInputView
+    private let _viewModel: EncoderViewModel
 
     // MARK: Initialization
 
-    init(serializer: Serializer, inputView: DecoderInputView? = nil, viewModel: DecoderViewModel? = nil) {
-        _inputView = inputView ?? DecoderInputView.loadFromNib()
-        _viewModel = viewModel ?? DecoderViewModel(serializer: serializer)
+    init(serializer: Serializer, inputView: EncoderInputView? = nil, viewModel: EncoderViewModel? = nil) {
+        _inputView = inputView ?? EncoderInputView.loadFromNib()
+        _viewModel = viewModel ?? EncoderViewModel(serializer: serializer)
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -54,9 +54,9 @@ class DecoderViewController: UIViewController {
     }
 }
 
-extension DecoderViewController: DecoderViewDelegate {
-    func decode(hiByte: String?, loByte: String?) {
-        let (result, error) = _viewModel.decode(hiByte: hiByte, loByte: loByte)
+extension EncoderViewController: EncoderViewDelegate {
+    func encode(value: String?) {
+        let (result, error) = _viewModel.encode(value: value)
         _inputView.configure(result: result, error: error, delegate: self)
     }
 }

@@ -17,16 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: Delegate implementation
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        let decoder = DecoderViewController()
-        let green = UIViewController()
-        green.view.backgroundColor = .green
-        let pagedViewController = PagedViewController(viewControllers: [decoder, green])
-
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = pagedViewController
+        window?.rootViewController = createRootViewController()
         window?.makeKeyAndVisible()
 
         return true
+    }
+
+    private func createRootViewController() -> UIViewController {
+        let serializer = SignificantBitClearingSerializer()
+        let encoder = EncoderViewController(serializer: serializer)
+        let decoder = DecoderViewController(serializer: serializer)
+
+        return PagedViewController(viewControllers: [encoder, decoder])
     }
 }
 

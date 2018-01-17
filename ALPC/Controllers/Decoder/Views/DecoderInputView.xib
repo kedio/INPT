@@ -16,11 +16,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="R5J-jo-yHG">
-                    <rect key="frame" x="18" y="234.5" width="339" height="198.5"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="R5J-jo-yHG">
+                    <rect key="frame" x="18" y="103" width="339" height="462.5"/>
                     <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nYM-5c-GZb">
+                            <rect key="frame" x="0.0" y="0.0" width="339" height="48"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mMV-R8-6V1">
-                            <rect key="frame" x="0.0" y="0.0" width="339" height="128"/>
+                            <rect key="frame" x="0.0" y="98" width="339" height="128"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eyG-aN-sZZ">
                                     <rect key="frame" x="0.0" y="0.0" width="164.5" height="128"/>
@@ -38,7 +44,7 @@
                                                     <rect key="frame" x="0.0" y="20.5" width="164.5" height="107.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                    <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                         </stackView>
@@ -83,32 +89,29 @@
                             </subviews>
                         </stackView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2g-2Y-Omu">
-                            <rect key="frame" x="0.0" y="138" width="339" height="30"/>
+                            <rect key="frame" x="0.0" y="276" width="339" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="FR8-uU-DzH"/>
                             </constraints>
-                            <state key="normal" title="Decode"/>
+                            <state key="normal" title="Decode">
+                                <color key="titleColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
                             <connections>
-                                <action selector="encode:" destination="iN0-l3-epB" eventType="touchUpInside" id="peu-07-NeJ"/>
+                                <action selector="decode:" destination="iN0-l3-epB" eventType="touchUpInside" id="aFu-LP-XDC"/>
                             </connections>
                         </button>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="k3t-vt-QFC">
-                            <rect key="frame" x="0.0" y="178" width="339" height="20.5"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aj5-hG-iwO">
-                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0P-kS-DLK">
-                                    <rect key="frame" x="174.5" y="0.0" width="164.5" height="20.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0P-kS-DLK">
+                            <rect key="frame" x="0.0" y="356" width="339" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeI-eE-8hv" userLabel="I">
+                            <rect key="frame" x="0.0" y="442" width="339" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                 </stackView>
             </subviews>
@@ -120,8 +123,10 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
-                <outlet property="hiByteTextView" destination="ZRP-ob-iug" id="QP1-TQ-eSq"/>
-                <outlet property="loByteTextView" destination="pSS-r2-3eL" id="SkW-9v-oSK"/>
+                <outlet property="decodeButton" destination="L2g-2Y-Omu" id="alV-WX-PM5"/>
+                <outlet property="errorLabel" destination="NeI-eE-8hv" id="Rzl-tE-ErP"/>
+                <outlet property="hiByteTextField" destination="ZRP-ob-iug" id="pne-Z1-wpo"/>
+                <outlet property="loByteTextField" destination="pSS-r2-3eL" id="xQg-id-B52"/>
                 <outlet property="resultLabel" destination="d0P-kS-DLK" id="fZh-kC-9nV"/>
             </connections>
         </view>
