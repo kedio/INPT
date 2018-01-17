@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		73AA781F200EFC1300E966CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA781E200EFC1300E966CE /* AppDelegate.swift */; };
-		73AA7821200EFC1300E966CE /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7820200EFC1300E966CE /* RootViewController.swift */; };
-		73AA7823200EFC1300E966CE /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7822200EFC1300E966CE /* DataViewController.swift */; };
-		73AA7825200EFC1300E966CE /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7824200EFC1300E966CE /* ModelController.swift */; };
-		73AA7828200EFC1300E966CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AA7826200EFC1300E966CE /* Main.storyboard */; };
 		73AA782A200EFC1300E966CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AA7829200EFC1300E966CE /* Assets.xcassets */; };
 		73AA782D200EFC1300E966CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AA782B200EFC1300E966CE /* LaunchScreen.storyboard */; };
 		73AA7838200EFC1300E966CE /* ALPCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7837200EFC1300E966CE /* ALPCTests.swift */; };
+		73AA7847200EFD9600E966CE /* PagedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7846200EFD9600E966CE /* PagedViewController.swift */; };
+		73AA7849200EFFCA00E966CE /* DecoderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7848200EFFCA00E966CE /* DecoderViewController.swift */; };
+		73AA7850200F00BE00E966CE /* DecoderInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73AA784F200F00BE00E966CE /* DecoderInputView.xib */; };
+		73AA7852200F00C700E966CE /* DecoderInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7851200F00C700E966CE /* DecoderInputView.swift */; };
+		73AA7855200F145300E966CE /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7854200F145300E966CE /* UIViewExtensions.swift */; };
+		73AA7858200F15B800E966CE /* DecoderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AA7857200F15B800E966CE /* DecoderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +32,18 @@
 /* Begin PBXFileReference section */
 		73AA781B200EFC1200E966CE /* ALPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AA781E200EFC1300E966CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73AA7820200EFC1300E966CE /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
-		73AA7822200EFC1300E966CE /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
-		73AA7824200EFC1300E966CE /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
-		73AA7827200EFC1300E966CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73AA7829200EFC1300E966CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73AA782C200EFC1300E966CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73AA782E200EFC1300E966CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AA7833200EFC1300E966CE /* ALPCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ALPCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AA7837200EFC1300E966CE /* ALPCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ALPCTests.swift; sourceTree = "<group>"; };
 		73AA7839200EFC1300E966CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AA7846200EFD9600E966CE /* PagedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedViewController.swift; sourceTree = "<group>"; };
+		73AA7848200EFFCA00E966CE /* DecoderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderViewController.swift; sourceTree = "<group>"; };
+		73AA784F200F00BE00E966CE /* DecoderInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DecoderInputView.xib; sourceTree = "<group>"; };
+		73AA7851200F00C700E966CE /* DecoderInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderInputView.swift; sourceTree = "<group>"; };
+		73AA7854200F145300E966CE /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		73AA7857200F15B800E966CE /* DecoderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,13 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				73AA781E200EFC1300E966CE /* AppDelegate.swift */,
-				73AA7820200EFC1300E966CE /* RootViewController.swift */,
-				73AA7822200EFC1300E966CE /* DataViewController.swift */,
-				73AA7824200EFC1300E966CE /* ModelController.swift */,
-				73AA7826200EFC1300E966CE /* Main.storyboard */,
-				73AA7829200EFC1300E966CE /* Assets.xcassets */,
-				73AA782B200EFC1300E966CE /* LaunchScreen.storyboard */,
-				73AA782E200EFC1300E966CE /* Info.plist */,
+				73AA7842200EFD1E00E966CE /* Controllers */,
+				73AA7853200F144200E966CE /* Extensions */,
+				73AA7856200F146F00E966CE /* SupportingFiles */,
 			);
 			path = ALPC;
 			sourceTree = "<group>";
@@ -100,6 +100,68 @@
 				73AA7839200EFC1300E966CE /* Info.plist */,
 			);
 			path = ALPCTests;
+			sourceTree = "<group>";
+		};
+		73AA7842200EFD1E00E966CE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				73AA7844200EFD6500E966CE /* Decoder */,
+				73AA7843200EFD2B00E966CE /* Encoder */,
+				73AA7845200EFD6D00E966CE /* Paged */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73AA7843200EFD2B00E966CE /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		73AA7844200EFD6500E966CE /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				73AA784E200F00B200E966CE /* Views */,
+				73AA7848200EFFCA00E966CE /* DecoderViewController.swift */,
+				73AA7857200F15B800E966CE /* DecoderViewModel.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		73AA7845200EFD6D00E966CE /* Paged */ = {
+			isa = PBXGroup;
+			children = (
+				73AA7846200EFD9600E966CE /* PagedViewController.swift */,
+			);
+			path = Paged;
+			sourceTree = "<group>";
+		};
+		73AA784E200F00B200E966CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73AA784F200F00BE00E966CE /* DecoderInputView.xib */,
+				73AA7851200F00C700E966CE /* DecoderInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73AA7853200F144200E966CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				73AA7854200F145300E966CE /* UIViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		73AA7856200F146F00E966CE /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				73AA782B200EFC1300E966CE /* LaunchScreen.storyboard */,
+				73AA782E200EFC1300E966CE /* Info.plist */,
+				73AA7829200EFC1300E966CE /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,8 +248,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73AA782D200EFC1300E966CE /* LaunchScreen.storyboard in Resources */,
+				73AA7850200F00BE00E966CE /* DecoderInputView.xib in Resources */,
 				73AA782A200EFC1300E966CE /* Assets.xcassets in Resources */,
-				73AA7828200EFC1300E966CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AA7821200EFC1300E966CE /* RootViewController.swift in Sources */,
-				73AA7825200EFC1300E966CE /* ModelController.swift in Sources */,
-				73AA7823200EFC1300E966CE /* DataViewController.swift in Sources */,
+				73AA7847200EFD9600E966CE /* PagedViewController.swift in Sources */,
+				73AA7855200F145300E966CE /* UIViewExtensions.swift in Sources */,
+				73AA7849200EFFCA00E966CE /* DecoderViewController.swift in Sources */,
+				73AA7852200F00C700E966CE /* DecoderInputView.swift in Sources */,
 				73AA781F200EFC1300E966CE /* AppDelegate.swift in Sources */,
+				73AA7858200F15B800E966CE /* DecoderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,14 +295,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		73AA7826200EFC1300E966CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73AA7827200EFC1300E966CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		73AA782B200EFC1300E966CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -363,7 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDLYQW3XY4;
-				INFOPLIST_FILE = ALPC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ALPC/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.ALPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -378,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LDLYQW3XY4;
-				INFOPLIST_FILE = ALPC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ALPC/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = None.ALPC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
